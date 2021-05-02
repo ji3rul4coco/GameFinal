@@ -96,18 +96,18 @@ void setup(){
   for (int i = 0 ; i < 2 ; i ++) ExitCheck[i][1] = loadImage("Picture/StartPage/Exit" + i + "_1.png");
   
   //GamePage Data Load
-  ScriptText = loadStrings("Data/Script_Text.txt"); //No.23 need to change color on Number_15
-  ScriptOn = loadStrings("Data/Script_On.txt");
-  ScriptPeoPleName = loadStrings("Data/Script_PeoPleName.txt");
-  ChangeScenesOn = loadStrings("Data/ChangeScenes_On.txt");
-  PeoPle1Type = loadStrings("Data/Character/Character_No1.txt");
-  PeoPle1Face = loadStrings("Data/Character/Character_No1_Face.txt");
-  PeoPle2Type = loadStrings("Data/Character/Character_No2.txt");
-  PeoPle2Face = loadStrings("Data/Character/Character_No2_Face.txt");
-  PeoPleMoveType = loadStrings("Data/Character/Character_MoveType.txt");
-  PeoPleSite = loadStrings("Data/Character/Character_Site.txt");
-  SpecialObject = loadStrings("Data/SpecialObject.txt");
-  BGData = loadStrings("Data/BackGround_Change.txt");
+  ScriptText = loadStrings("Script_Text.txt"); //No.23 need to change color on Number_15
+  ScriptOn = loadStrings("Script_On.txt");
+  ScriptPeoPleName = loadStrings("Script_PeoPleName.txt");
+  ChangeScenesOn = loadStrings("ChangeScenes_On.txt");
+  PeoPle1Type = loadStrings("Character_No1.txt");
+  PeoPle1Face = loadStrings("Character_No1_Face.txt");
+  PeoPle2Type = loadStrings("Character_No2.txt");
+  PeoPle2Face = loadStrings("Character_No2_Face.txt");
+  PeoPleMoveType = loadStrings("Character_MoveType.txt");
+  PeoPleSite = loadStrings("Character_Site.txt");
+  SpecialObject = loadStrings("SpecialObject.txt");
+  BGData = loadStrings("BackGround_Change.txt");
   for (int i = 0 ; i < PeoPleSite.length ; i++){ if(int(PeoPleSite[i]) == 0) PeoPleSite[i] = "Left"; if(int(PeoPleSite[i]) == 1) PeoPleSite[i] = "Mid"; if(int(PeoPleSite[i]) == 2) PeoPleSite[i] = "Right"; }
   ScriptTable[0] =requestImage("Picture/GamePage/Script_Table.png");
   ScriptTable[1] =requestImage("Picture/GamePage/Script_Name.png");
